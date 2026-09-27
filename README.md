@@ -21,7 +21,7 @@ Set `data_path` (line 13 of the script) to the folder containing the data files,
 
 ## Known issues with current Python and Keras versions
 
-The script was written in 2018 for Keras 2:
+The script was written in 2018 for Keras 2 (the pre-trained network was saved with Keras 2.0.6 on the TensorFlow backend):
 
 - `time.clock()` was removed in Python 3.8; use `time.perf_counter()` instead.
 - `Adam(lr=..., decay=...)` uses Keras 2 argument names; newer Keras versions use `learning_rate` and no longer accept `decay`.
